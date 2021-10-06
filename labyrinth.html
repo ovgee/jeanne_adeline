@@ -1,0 +1,36 @@
+<html>
+    <head>
+     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    </head>
+
+    <body>
+
+        <a-scene>
+            <a-assets>
+                <img id="wall" src="./dossier/infinite_double.jpg">
+                <img id="wall1" src="./dossier/grid BW.jpg BW.jpg">
+                <img id="wall2" src="./dossier/gridBWVERTICAL.jpg">
+                <img id="wall3" src="./dossier/paysage.jpg">
+            </a-assets>
+        
+            <a-entity light="type: hemisphere; color: #33C; groundColor: #004FF7; intensity: 2"></a-entity>
+            <a-entity light="type: directional; color: #222; intensity: 0.5" position="-1 1 0"></a-entity>
+
+            <a-box position="-0.0 1 -6" rotation="-90 180 0" scale ="4 0.2 2" src="#wall2"></a-box>
+            <a-box position="-2 1 -4" rotation="-90 90 0" scale="4 0,8 2" src="#wall2"></a-box>
+            <a-box position="2 1 -4" rotation="-90 90 0" scale="4 0,8 2" src="#wall2"></a-box>
+            <a-box position="-1 1 -2" rotation="-90 180 0" scale="2 0,8 2" src="#wall2"></a-box>
+            <a-box position="-1 1 -2" rotation="-90 180 0" scale="1.5 0,8 2" src="#wall2"></a-box>
+            <a-box position="-0,1 1 -2" rotation="-90 180 0" scale="-1.2 0,8 2" src="#wall2"></a-box>
+            <a-box position="1.65 1 -2" rotation="-90 180 0" scale="-0.7 -0,8 -2" src="#wall2"></a-box>
+            <a-box position="-1.5 1 -2" rotation="-90 180 0" scale="-1 -0,5 -2" src="#wall2"></a-box>
+            <a-box position="1 1 -2.6" rotation="-90 180 0" scale="-2 0,8 2" src="#wall2"></a-box>
+            <a-box position="-0,2 1 -3.2" rotation="-90 180 0" scale="-3 0,8 2" src="#wall2"></a-box>
+            <a-box position="-0,2 1 -5.2" rotation="-90 180 0" scale="-3 0,8 2" src="#wall2"></a-box>
+            <a-box position="-1.45 1.1 -4.20" rotation="-90 90 0" scale="2.020 0.0 2" src="#wall2"></a-box>
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" src="#wall"></a-plane>
+            
+            <a-sky color="#012233"></a-sky>
+        </a-scene>
+    </body>
+</html>
